@@ -40,6 +40,7 @@ public class AddProductDialogFragment extends DialogFragment
         View view = inflater.inflate(R.layout.fragment_add_product, container, false);
         ButterKnife.inject(this, view);
 
+        getDialog().setTitle("Add Product");
 
         categorySpinner.setAdapter(
                 new ArrayAdapter<Category>(
